@@ -34,5 +34,13 @@
 }
 
 footer{
-    height: 120px;
+    height: 100%;
+}
+
+.decorate-footer{
+    padding: 20px;
+}
+.decorate-footer > a{
+   color:black;
+   text-decoration: none;
 }
