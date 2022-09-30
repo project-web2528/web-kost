@@ -1,23 +1,38 @@
-.navbar{
+.navbar {
     height: 80px !important;
 }
 
-.navbar-brand{
-    color:#5588EE !important;
+.navbar-brand {
+    color: #5588EE !important;
 }
 
-.nav-link{
-   font-weight: 700 !important;
-}
-
-.dropdown-menu{
-    border-color: #eaeaea !important;
-}
-
-.dropdown-item{
+.nav-link {
     font-weight: 700 !important;
 }
 
-.caraousel{
-    margin: 0 auto;
+.dropdown-menu {
+    border-color: #eaeaea !important;
+}
+
+.dropdown-item {
+    font-weight: 700 !important;
+}
+
+
+.carousel-item>img {
+    max-width: 100% !important;
+    height: 400px !important;
+    object-fit: cover;
+}
+
+.card{
+    width: 100% !important;
+}
+.card > img{
+    height: 300px;
+    object-fit: cover;
+}
+
+footer{
+    height: 120px;
 }

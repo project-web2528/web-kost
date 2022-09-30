@@ -13,7 +13,7 @@
 <body>
 
     <!--navbar-->
-    <nav class="navbar navbar-expand-lg shadow-sm mb-5 bg-body rounded">
+    <nav class="navbar navbar-expand-lg shadow-sm mb-5 bg-body rounded sticky-top">
         <div class="container">
             <span><img src="/assets/icons8-home.svg" /></span>
             <a class="navbar-brand fs-3 fw-bolder text-success" href="#">
@@ -42,8 +42,14 @@
                                 my acount
                             </a>
                             <ul class="dropdown-menu bg-body rounded-0">
-                                <li><a class="dropdown-item" href="#">login</a></li>
-                                <li><a class="dropdown-item" href="#">register</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="login.html"><img
+                                            src="https://img.icons8.com/material-outlined/24/000000/user--v1.png" />
+                                        sign in</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#"><img
+                                            src="https://img.icons8.com/windows/24/000000/sign-up.png" />
+                                        sign up</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -53,21 +59,193 @@
     </nav>
 
     <!--Serach kos-->
-    <section class="container mt-4 mb-5">
+    <section class="container mt-5 mb-5">
         <center>
             <p class="fs-2 fw-bolder">Mau cari kos?</p>
             <form class="d-flex col-lg-6 col-sm-7" role="search">
-                <input class="form-control me-2" type="search" placeholder="Temukan kost favoritmu" aria-label="Search"
-                    id="inputlg">
+                <input class="form-control me-2 outline-success" type="search" placeholder="Temukan kost favoritmu"
+                    aria-label="Search" id="inputlg">
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
         </center>
     </section>
 
-    <!--carousel kost pria-->
-    <section class="container mt-4">
-       
+    <!--carousel-->
+    <section class="container-fluid mt-5 mb-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-sm-12">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="https://artikel.rumah123.com/news-content/img/2021/09/02212549/Desain-Kos-Kosan-Pinterest10.jpg"
+                                class="d-block w-100 rounded img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="https://cdn1.katadata.co.id/media/images/thumb/2019/10/17/2019_10_17-11_04_43_b9ae64f66fbf0ac902ffbb274781d73c_620x413_thumb.jpg"
+                                class="d-block w-100 rounded" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn1-production-images-kly.akamaized.net/-R-MC5UiFfF97UD8h0BCAk27E0w=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/861628/original/073424800_1429960385-3.JPG"
+                                class="d-block w-100 rounded" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="next">
+                        <span class="text-success carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
     </section>
+
+
+    <!--kost putra-->
+    <section class="container mt-5 mb-5">
+        <p class="text-center text-capitalize fs-3 fw-bolder">kost pria</p>
+        <center>
+            <div class="row gy-3">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="p-3">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="https://www.kamartidur.com/wp-content/uploads/2019/09/Kamar-kost-minimalis.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body ">
+                                <h5 class="card-title text-capitalize">kost arjuna</h5>
+                                <p class="card-text ">Rp.1.500.000/Bulan</p>
+                                <a href="#" class="btn btn-success">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="p-3">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="https://www.sewakost.com/files/03-2021/ad52152/disewakan-kamar-kost-tanjung-2107801920.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-capitalize">kost siliwangi</h5>
+                                <p class="card-text ">Rp.800.000/Bulan</p>
+                                <a href="#" class="btn btn-success">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="p-3">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="http://www.residences1368.com/wp-content/uploads/2017/06/IMG20170509160756.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body ">
+                                <h5 class="card-title text-capitalize">kost Else</h5>
+                                <p class="card-text ">Rp.950.000/Bulan</p>
+                                <a href="#" class="btn btn-success">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </center>
+        <hr class="divider mt-5 b-4">
+
+    </section>
+
+
+    <!--kost putri-->
+    <section class="container mt-5 mb-5">
+        <p class="text-center text-capitalize fs-3 fw-bolder">kost wanita</p>
+        <center>
+            <div class="row gy-3">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="p-3">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="https://www.harapanrakyat.com/wp-content/uploads/2022/01/Dekorasi-Kamar-Kost-Aesthetic-Inspirasi-Tempat-yang-Nyaman-dan-Unik.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body ">
+                                <h5 class="card-title text-capitalize">kost dewi</h5>
+                                <p class="card-text ">Rp.1.000.000/Bulan</p>
+                                <a href="#" class="btn btn-success">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="p-3">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="https://cf.shopee.co.id/file/b32783bcccc6009c88ca486efd753914"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-capitalize">kost fm</h5>
+                                <p class="card-text ">Rp.250.000/Bulan</p>
+                                <a href="#" class="btn btn-success">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="p-3">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="https://media.karousell.com/media/photos/products/2019/01/26/kamar_kost_di_jakarta_utara_1548495022_680847f6_progressive.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body ">
+                                <h5 class="card-title text-capitalize">kost cantika</h5>
+                                <p class="card-text ">Rp.350.000/Bulan</p>
+                                <a href="#" class="btn btn-success">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </center>
+    </section>
+
+    <footer class="container-fluid border p-3 bg-body">
+        <div class="container text-center">
+
+            <span>
+                <a class="nav-link" href="https://www.instagram.com/benediktus_dika/">
+                    <img src="https://img.icons8.com/material-outlined/24/000000/instagram-new--v1.png" alt="">
+                    benediktus_dika
+                </a>
+            </span>
+
+            <span>
+                <a class="nav-link" href="https://www.instagram.com/marcelinaa._/">
+                    <img src="https://img.icons8.com/material-outlined/24/000000/instagram-new--v1.png" alt="">
+                    marcelinaa._
+                </a>
+            </span>
+
+            <span>
+                <a class="nav-link" href="https://github.com/project-web2528">
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" />
+                    project-web2528
+                </a>
+            </span>
+
+
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
