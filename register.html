@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family: Verdana;
+            height: auto;
+        }
+
+        button{
+            background-color: aquamarine;
+            cursor: pointer;
+            width: 100%;
+            height: 30px;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container{
+            padding: 5px;
+            background-color: burlywood;
+            width: 700px;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+
+        input[type=text], input[type=password]{
+            display: inline-block;
+            box-sizing: border-box;
+            width: 100%;
+            margin: 8px auto;
+            padding: 10px 10px;
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Up Form</h1>
+
+        <table>
+        <tr><label>Nama</label></tr>
+        <tr><input type="text" placeholder="Masukkan nama lengkap anda"><p></p></tr>
+
+        <label>Email</label>
+        <input type="text" placeholder="Masukkan email anda"><p></p>
+
+        <label>Alamat</label>
+        <input type="text" placeholder="Masukkan alamat anda"><p></p>
+
+        <label>No HP</label>
+        <input type="text" placeholder="Masukkan no handphone aktif anda"><p></p>
+
+        <label>Username</label>
+        <input type="text" placeholder="Masukkan username anda. Username akan digunakan untuk login"><p></p>
+
+        <label>Password</label>
+        <input type="password" placeholder="Masukkan password anda"><p></p>
+        </table>
+
+        <button type="submit">Sign Up</button><p></p>
+        <div style="text-align: center;">Sudah punya akun? <a href="#">Sign In</a></div>
+    </div>
+</body>
+</html>
