@@ -1,0 +1,158 @@
+*,
+html,
+body {
+    font-family: Verdana;
+    margin: 0;
+    padding: 0;
+}
+
+.container-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+.box-login{
+    width: 350px;
+    height: 320px;
+    border: 3px solid #eaeaea;
+}
+
+.box-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    box-shadow: 0px 1px #eaeaea;
+}
+
+.title-header {
+    font-weight: 700;
+    font-size: x-large;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.title-content {
+    color: grey;
+    font-size: small;
+}
+
+.box-body {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5%;
+}
+
+.field {
+    display: flex;
+    width: 100%;
+    flex-flow: column-reverse;
+    margin-bottom: 1em;
+}
+
+input[type=text],
+input[type=password] {
+    font-size: 12px;
+    width: 80%;
+    height: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: #eaeaea;
+    background-color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+label {
+    color: grey;
+    font-size: medium;
+}
+
+label,
+input[type=text],
+input[type=password] {
+    margin-left: 10%;
+    transition: all 0.2s;
+    touch-action: manipulation;
+}
+
+input:placeholder-shown+label {
+    cursor: text;
+    max-width: 66.66%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transform-origin: left bottom;
+    transform: translate(0, 0.75rem) scale(0.75);
+}
+
+::-webkit-input-placeholder {
+    opacity: 0;
+    transition: inherit;
+}
+
+input:focus::-webkit-input-placeholder {
+    opacity: 1;
+}
+
+input:not(:placeholder-shown)+label,
+input:focus+label {
+    transform: translate(0, 0) scale(1);
+    cursor: pointer;
+}
+
+.box-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: 5%; 
+}
+
+input[type=button],
+input[type=submit] {
+    text-transform: capitalize;
+    width: 135px;
+    height: 35px;
+    font-weight: 700;
+}
+
+#sign-in{
+    background-color: #5cb85c;
+    color:white;
+}
+
+input[type=button]{
+    border: none;
+    background-color: #d9534f;
+    color: white;
+}
+
+input[type=button]:hover, input[type=submit]{
+    cursor: pointer;
+}
+
+.belum-punya-akun{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-top: 5%;
+    font-size: x-small;
+    font-weight: 700;
+}
+
+.belum-punya-akun > a{
+    text-decoration: none;
+}

@@ -1,0 +1,164 @@
+*,
+html,
+body {
+    font-family: Verdana;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+nav {
+    width: 100%;
+    box-shadow: 0 1px #eaeaea;
+    position: fixed;
+}
+
+.navbar {
+    width: 90%;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.brand {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    color: #5cb85c;
+    font-size: x-large;
+}
+
+.side-bar {
+    height: 80px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.side-bar > label {
+    cursor: pointer;
+}
+
+#side-menu {
+    height: 100vh;
+    border: 1px solid #eaeaea;
+    width: 25%;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    left: -50%;
+    z-index : 2;
+    transition: .3s;
+}
+
+
+.close-side {
+    height: 80px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-bottom: 0.1 solid #eaeaea;
+}
+
+.close-side > label{
+    height: 25px;
+    width: 25px;
+    margin-right: 20px;
+    border: none;
+    font-weight: bolder;
+    font-size: larger;
+    color: grey;
+    
+}
+
+.close-side > label:hover{
+    cursor: pointer;
+}
+
+
+.side-item {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #eaeaea;
+    list-style: none;
+}
+
+.side-link{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: grey;
+}
+
+.side-link:hover{
+    background-color: #eaeaea;
+    color: white;
+}
+
+.active{
+    background-color: #eaeaea;
+}
+
+#check{
+    display: none;
+}
+
+#close-bar{
+    display: none;
+}
+
+
+footer{
+    width: 100%;
+    height: 170px;
+    bottom: 0;
+    height: 80px;
+    border-top: 1px solid #eaeaea;
+}
+
+.box-footer{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:  auto;
+}
+
+.decorate-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.decorate-footer>a {
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width:768px) {
+    #side-menu{
+        width: 50%;
+    }
+
+    footer{
+        height:120px;
+    }
+
+    .decorate-footer{
+        
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,63 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign In</title>
 
-    <style>
-        body{
-            font-family: Verdana;
-            height: auto;
-        }
-
-        button{
-            background-color: aquamarine;
-            cursor: pointer;
-            width: 100%;
-            height: 30px;
-            border-radius: 10px;
-            padding: 10px;
-            text-align: center;
-        }
-
-        .container{
-            padding: 5px;
-            background-color: burlywood;
-            width: 25%;
-            border-radius: 10px;
-            margin: 10% auto;
-        }
-
-        input[type=text], input[type=password]{
-            display: inline-block;
-            box-sizing: border-box;
-            width: 100%;
-            margin: 8px auto;
-            padding: 10px 10px;
-            border-radius: 10px;
-        }
-
-        h1{
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="box">
-            <h1>Sign In Form</h1>
-            <label>Username</label><br>
-            <input type="text" placeholder="Masukkan username anda"><p></p>
-    
-            <label>Password</label><br>
-            <input type="password" placeholder="Masukkan password anda"><p></p>
-    
-            <button type="submit">Sign In</button><p>
-            <div style="text-align: center;">Belum punya akun? <a href="#">Sign Up</a></div>  
-        </div>
-    </div>
+    <div class="container-box">
+        <form method="post">
+            <div class="box-login">
+                <div class="box-header">
+                    <div class="title-header">Sign In</div>
+                    <div class="title-content">Please fill in this form to Sign In!</div>
+                </div>
+                <div class="box-body">
+                    <div class="field">
+                        <input type="text" name="username" id="username" placeholder="john">
+                        <label for="username">Username</label>
+                    </div>
+
+                    <div class="field">
+                        <input type="password" name="password" id="password" placeholder="6-12 karakter">
+                        <label for="password">Password</label>
+                    </div>
+
+                    <div class="box-footer">
+                        <a href="index.html"><input type="button" value="cancel"></a>
+                        <a href="dashboard.html"><input type="button" id="sign-in" value="sign in"></a>
+                    </div>
+
+                    <div class="belum-punya-akun">
+                        Belum punya akun? <a href="register.html">&nbspSign Up</a>
+                    </div>
+
+                </div>
+            </div>
+        </form>
 </body>
+
 </html>

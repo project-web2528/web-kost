@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Datang!</title>
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <nav>
+
+            <div class="navbar">
+                <span class="side-bar">
+                    <button type="button" id="check" onclick="showSideBar()"></button>
+                    <label id="label-check" for="check">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/menu-rounded.png" width="25px"
+                            height="25px" />
+                    </label></span>
+
+                <span class="brand"><img src="/assets/icons8-home.svg" alt="">KostDoang</span>
+            </div>
+
+            <div id="side-menu">
+                <ul>
+                    <li class="close-side">
+                        <button type="button" id="close-bar" onclick="closeSideBar()" id="close-bar"></button>
+                        <label for="close-bar">
+                            <img src="https://img.icons8.com/ios-filled/50/000000/menu-rounded.png" width="25px"
+                                height="25px" />
+                        </label>
+                    </li>
+                    <li class="side-item"><a class="side-link active" href="dashboard.html">Home</a></li>
+                    <li class="side-item"><a class="side-link" href="myprofile.html">My Profile</a></li>
+                    <li class="side-item"><a class="side-link" href="myorder.html">My Order </a></li>
+                    <li class="side-item"><a class="side-link" href="index.html">Sign Out</a></li>
+
+                </ul>
+            </div>
+        </nav>
+
+
+    </div>
+    <footer>
+        <div class="box-footer">
+            <div class="decorate-footer">
+                <a href="https://www.instagram.com/benediktus_dika/">
+                    <img src="https://img.icons8.com/material-outlined/24/000000/instagram-new--v1.png" alt="">
+                    benediktus_dika
+                </a>
+
+                <a href="https://www.instagram.com/marcelinaa._/">
+                    <img src="https://img.icons8.com/material-outlined/24/000000/instagram-new--v1.png" alt="">
+                    marcelinaa._
+                </a>
+
+                <a href="https://github.com/project-web2528">
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" />
+                    project-web2528
+                </a>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+    <script src="js/side-bar.js"></script>
+</body>
+
+</html>
